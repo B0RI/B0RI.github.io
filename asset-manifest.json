@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.c4b15590.css",
-    "main.js": "/blog/static/js/main.ee2fd4a0.js",
-    "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
-    "static/media/bg.jpeg": "/blog/static/media/bg.8d62ab75a12f23d52995.jpeg",
-    "index.html": "/blog/index.html",
-    "main.c4b15590.css.map": "/blog/static/css/main.c4b15590.css.map",
-    "main.ee2fd4a0.js.map": "/blog/static/js/main.ee2fd4a0.js.map",
-    "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
+    "main.css": "/static/css/main.5b24e1e5.css",
+    "main.js": "/static/js/main.a49cceed.js",
+    "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
+    "static/media/bg.jpeg": "/static/media/bg.8d62ab75a12f23d52995.jpeg",
+    "static/media/apple_logo.png": "/static/media/apple_logo.97b18b36f1de1b394deb.png",
+    "index.html": "/index.html",
+    "main.5b24e1e5.css.map": "/static/css/main.5b24e1e5.css.map",
+    "main.a49cceed.js.map": "/static/js/main.a49cceed.js.map",
+    "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4b15590.css",
-    "static/js/main.ee2fd4a0.js"
+    "static/css/main.5b24e1e5.css",
+    "static/js/main.a49cceed.js"
   ]
 }
