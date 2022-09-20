@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
+    /* background-color: #282c34; */
+    background: url(../public/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: #c6c6c6;
+}
+.AppleLogo {
+    width: 15px;
+}
+.MenuBar {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    background-color: #eeeeee;
+    background: rgba(0, 0, 0, 0.7);
+    color: #eeeeee;
+    font-size: 15px;
+    font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MenuElementStart {
+    margin: 0 10px 0 20px;
+}
+.MenuElement {
+    margin: 0 10px 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Terminal {
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2f30;
+    width: 650px;
+    height: 450px;
+    border-radius: 10px;
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Top {
+    background-color: #302e2d;
+    width: 100%;
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid 1px #090909;
+}
+.BtnSection {
+    /* background-color: blueviolet; */
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ControlBtn {
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+}
+.red {
+    background-color: #ed6a5e;
 }
 
-.App-link {
-  color: #61dafb;
+.yellow {
+    background-color: #f5be4f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.green {
+    background-color: #61c454;
+}
+
+.Text {
+    margin: 0;
+}
+.TextArea {
+    padding: 10px;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 25px;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+.Prompt {
+    background-color: #c6c6c6;
+    width: 10px;
+    height: 20px;
+    animation: blink-effect 1.5s step-end infinite;
+}
+
+.TextBound {
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
 }

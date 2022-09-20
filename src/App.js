@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import apple from "./image/apple_logo.png";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="MenuBar">
+                <div className="MenuElementStart">
+                    <img className="AppleLogo" src={apple} alt="" />
+                </div>
+                <div className="MenuElement">
+                    <p>Terminal</p>
+                </div>
+                <div className="MenuElement">
+                    <p>Shell</p>
+                </div>
+                <div className="MenuElement">
+                    <p>Edit</p>
+                </div>
+                <div className="MenuElement">
+                    <p>View</p>
+                </div>
+                <div className="MenuElement">
+                    <p>Session</p>
+                </div>
+            </div>
+            <div className="Terminal">
+                <div className="Top">
+                    <div className="BtnSection">
+                        <button className="ControlBtn red"></button>
+                        <button className="ControlBtn yellow"></button>
+                        <button className="ControlBtn green"></button>
+                    </div>
+                </div>
+
+                <div className="TextArea">
+                    <div className="TextBound">
+                        <div className="Prompt"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
