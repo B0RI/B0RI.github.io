@@ -15,7 +15,7 @@ const DateTime = () => {
 
     return (
         <>
-            <Moment format=" M월 D일 (dd) a hh:mm">{seconds}</Moment>
+            <Moment format=" M월 D일 (dd) a h:mm">{seconds}</Moment>
         </>
     );
 };

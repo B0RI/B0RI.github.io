@@ -1,0 +1,34 @@
+.Container {
+    display: flex;
+}
+.UserName {
+    background-color: #090909;
+}
+.Wrapper {
+    width: fit-content;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.Text {
+    color: #090909;
+    width: 20px;
+}
+.BlackTriangle {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #090909;
+    border-right: 10px solid transparent;
+}
+
+.SkyBlueTriangle {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid skyblue;
+    border-right: 10px solid transparent;
+}

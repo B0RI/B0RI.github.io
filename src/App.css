@@ -107,7 +107,11 @@
     }
 }
 
-.Prompt {
+.Input {
+    display: flex;
+}
+
+.Prompt2 {
     background-color: #c6c6c6;
     width: 10px;
     height: 20px;
@@ -116,6 +120,39 @@
 
 .TextBound {
     display: flex;
+    flex-direction: column;
+}
+
+.InputArea {
+    background-color: transparent;
+    border: none;
+    color: #eeeeee;
+    width: 100%;
+}
+.InputArea:focus {
+    outline: none;
+}
+
+.TerminalInput {
+    /* background-color: red; */
+    display: inline;
+    word-break: break-all;
+    outline: none;
+    visibility: visible;
+    height: 10px;
+}
+
+.TerminalInput:focus {
+    outline: none;
+}
+
+.CaretBlock {
+    border: 0;
+    padding: 0;
+    outline: none;
+    background-color: #eeeeee;
+    display: inline-block;
+    font-family: monospace;
 }
 
 p {

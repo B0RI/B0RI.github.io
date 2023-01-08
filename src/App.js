@@ -1,8 +1,19 @@
 import "./App.css";
+import React, { useRef, useEffect, useState } from "react";
+
 import apple from "./image/apple_logo.png";
 import DateTime from "./components/DateTime";
+import Prompt from "./components/Prompt";
 
 function App() {
+    const inputRef = useRef();
+    const [text, setText] = useState("");
+    const [history, setHistory] = useState([]);
+
+    useEffect(() => {
+        inputRef.current.focus();
+    }, []);
+
     return (
         <div className="App">
             <div className="MenuBar">
@@ -43,7 +54,23 @@ function App() {
 
                 <div className="TextArea">
                     <div className="TextBound">
-                        <div className="Prompt"></div>
+                        {/* {history.map((text) => {
+                            return <div>text</div>;
+                        })} */}
+                        <div className="Input">
+                            <Prompt />
+                            <div
+                                className="TerminalInput"
+                                contentEditable={false}
+                                spellCheck={false}
+                                ref={inputRef}
+                                input={text}
+                                onChange={(e) => {
+                                    setText(e.target.value);
+                                }}
+                            ></div>
+                            <button className="CaretBlock">&nbsp;</button>
+                        </div>
                     </div>
                 </div>
             </div>
